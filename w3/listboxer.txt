@@ -1,0 +1,12 @@
+Symbols: Alphabetic, Numeric, Both, None
+SortOrder: Ascending, Descending, None
+Range: All, 0-100, 101-200, 201-300, 300-9999, a-m, n-z, None
+
+IF[Range] = "None" THEN [Symbols] = "None";
+IF[Range] = "None" THEN [SortOrder] = "None";
+
+IF[Symbols] = "None" THEN [Range] = "None";
+IF[Symbols] = "None" THEN [SortOrder] = "None";
+
+IF[Range] in{"a-m", "n-z"} THEN [Symbols] NOT IN {"Numeric", "None"};
+IF[Range] in{"0-100", "101-200", "201-300", "300-9999"} THEN [Symbols] NOT IN {"Alphabetic", "None"};
