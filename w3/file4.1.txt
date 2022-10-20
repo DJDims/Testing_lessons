@@ -1,0 +1,5 @@
+type: CD, DVD
+speed: 2, 4, 8, 16, 24, 36, 52
+fileSystem: ISO, UFD, UFD/ISO
+multisession: No, Start, Continue
+dataSize: 100Mb, 700Mb, 4.7GB
