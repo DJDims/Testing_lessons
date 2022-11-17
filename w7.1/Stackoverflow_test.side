@@ -1,0 +1,852 @@
+{
+  "id": "7b1990ad-7d17-438b-ba75-04a645c1b038",
+  "version": "2.0",
+  "name": "Stackoverflow_test",
+  "url": "https://stackoverflow.com",
+  "tests": [{
+    "id": "c3f62216-98df-433b-bc44-12ffaa184050",
+    "name": "Login_without_email_and_password",
+    "commands": [{
+      "id": "28b0c5b9-8b0d-433f-9a35-ac95ed350a29",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e25a5cb4-7a8c-4b97-ae2b-49defe1e7ea5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99f9d466-3a2a-46ad-be01-764958b41c96",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.s-btn__filled:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f')]", "xpath:href"],
+        ["xpath=//nav/ol/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a432ec03-351a-4d42-8561-37cea9bcdc78",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-button",
+      "targets": [
+        ["id=submit-button", "id"],
+        ["name=submit-button", "name"],
+        ["css=#submit-button", "css:finder"],
+        ["xpath=//button[@id='submit-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04465be3-b7e4-4de0-b8f2-cb7cf466b257",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s-input-message:nth-child(3)",
+      "targets": [
+        ["css=.s-input-message:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='login-form']/div/p", "xpath:idRelative"],
+        ["xpath=//form/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Email cannot be empty.')]", "xpath:innerText"]
+      ],
+      "value": "Email cannot be empty."
+    }, {
+      "id": "f0e01c0b-7671-47c3-9417-7b55f74b26dc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s-input-message:nth-child(1)",
+      "targets": [
+        ["css=.s-input-message:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//form/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Password cannot be empty.')]", "xpath:innerText"]
+      ],
+      "value": "Password cannot be empty."
+    }]
+  }, {
+    "id": "e4c1b541-4d71-44e5-866a-85037f0cc08f",
+    "name": "Login_without_password",
+    "commands": [{
+      "id": "bca5ce5b-c4ea-4590-85d5-5a9e9bc5c1a5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16947431-6c0b-4bbb-939e-ff73eed4ec9e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b5f9c44-6fa9-407a-98e1-151fd14abc93",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.s-btn__filled", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f')]", "xpath:href"],
+        ["xpath=//nav/ol/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b595b46-1e45-4a20-9d81-f2cb80d33429",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b693644-80c6-4adc-9403-c3f1a18db9cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "dmitrii.kreivald@ivkhk.ee"
+    }, {
+      "id": "ba757692-e100-40d9-b867-f7d51d4a4aba",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-button",
+      "targets": [
+        ["id=submit-button", "id"],
+        ["name=submit-button", "name"],
+        ["css=#submit-button", "css:finder"],
+        ["xpath=//button[@id='submit-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87eab340-7893-4d4e-927b-3d92a807696d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s-input-message:nth-child(1)",
+      "targets": [
+        ["css=.s-input-message:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//form/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Password cannot be empty.')]", "xpath:innerText"]
+      ],
+      "value": "Password cannot be empty."
+    }]
+  }, {
+    "id": "e59ed778-01d5-41b2-b5af-927f2b1633cc",
+    "name": "Login_without_login",
+    "commands": [{
+      "id": "1bd12fa8-a1c7-4971-864b-6b793bcc608e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "358f9371-d6ec-4e59-a173-bd485a64aa40",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "238dc4ad-04f4-458d-9af9-f47bb6a9c0a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.s-btn__filled", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f')]", "xpath:href"],
+        ["xpath=//nav/ol/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c49561a8-7d96-494f-867b-de9b79e0eb34",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a29bf8d6-581f-4ab0-a248-e73045c2c5c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "319BNqu3&NnT"
+    }, {
+      "id": "6f081080-69c0-493d-ac31-28c09619172f",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-button",
+      "targets": [
+        ["id=submit-button", "id"],
+        ["name=submit-button", "name"],
+        ["css=#submit-button", "css:finder"],
+        ["xpath=//button[@id='submit-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a51aaa8d-3b3d-44a0-af68-3736c28db80b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s-input-message:nth-child(3)",
+      "targets": [
+        ["css=.s-input-message:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='login-form']/div/p", "xpath:idRelative"],
+        ["xpath=//form/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Email cannot be empty.')]", "xpath:innerText"]
+      ],
+      "value": "Email cannot be empty."
+    }]
+  }, {
+    "id": "e716777d-3171-4132-8151-4c051b56ab8f",
+    "name": "Login_restore_password_without_email",
+    "commands": [{
+      "id": "38b96bc1-f7e2-4906-aa2f-cca940802a35",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d98ab50-f1c4-4074-a1bf-f9c1f1177903",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "616611e9-886f-459c-81e6-3a2a2c9d7f3a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.s-btn__filled", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f')]", "xpath:href"],
+        ["xpath=//nav/ol/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05fdd187-0697-449c-ad10-1b301525649b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot password?",
+      "targets": [
+        ["linkText=Forgot password?", "linkText"],
+        ["css=.s-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot password?')]", "xpath:link"],
+        ["xpath=//form[@id='login-form']/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/account-recovery')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d6bf334-8f2a-4365-805c-8afcae1862f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-button",
+      "targets": [
+        ["id=submit-button", "id"],
+        ["name=submit-button", "name"],
+        ["css=#submit-button", "css:finder"],
+        ["xpath=//button[@id='submit-button']", "xpath:attributes"],
+        ["xpath=//form[@id='account-recovery']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Send recovery email')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bf14ce7-345e-47ac-bf8b-fad96c6700c6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s-input-message",
+      "targets": [
+        ["css=.s-input-message", "css:finder"],
+        ["xpath=//form[@id='account-recovery']/div/p", "xpath:idRelative"],
+        ["xpath=//form/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid email address')]", "xpath:innerText"]
+      ],
+      "value": "Invalid email address"
+    }]
+  }, {
+    "id": "ef935085-eee3-4d79-b2ce-f795ccf56154",
+    "name": "Login_restore_password_with_wrong_email",
+    "commands": [{
+      "id": "4524cda6-00ad-4d89-a438-b220d8d7d7b2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21496d77-b784-4741-943c-77af288af05b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1893ba6-eb2a-49b8-b006-aa7b2db29b54",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.s-btn__filled", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f')]", "xpath:href"],
+        ["xpath=//nav/ol/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "894b3623-490c-4131-b15e-b6a4b015dc5a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot password?",
+      "targets": [
+        ["linkText=Forgot password?", "linkText"],
+        ["css=.s-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot password?')]", "xpath:link"],
+        ["xpath=//form[@id='login-form']/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/account-recovery')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "044c7dc7-cacd-4a4b-ab03-27b43b74a5c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='account-recovery']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58ee1e8d-ab33-4a02-885e-f7f45d0de5ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='account-recovery']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "lolkekcheburek@gmail.com"
+    }, {
+      "id": "7874631e-d17d-4504-84db-3e23699e6adc",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-button",
+      "targets": [
+        ["id=submit-button", "id"],
+        ["name=submit-button", "name"],
+        ["css=#submit-button", "css:finder"],
+        ["xpath=//button[@id='submit-button']", "xpath:attributes"],
+        ["xpath=//form[@id='account-recovery']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Send recovery email')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62826930-f655-4e60-a151-96f438249ab9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.wmx5",
+      "targets": [
+        ["css=.wmx5", "css:finder"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4ee182ec-2353-454b-9703-7fc48a1448bb",
+    "name": "Login_with_wrong_login_and_password",
+    "commands": [{
+      "id": "836f9893-923e-44d4-b5e8-a1813f463925",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5d3b8ff-ca88-4172-ba1f-3211ff422077",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.s-btn__filled", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f')]", "xpath:href"],
+        ["xpath=//nav/ol/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed920ee2-1d24-491e-b3b3-8bcb8b66e8d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "017014e0-fb53-45c8-8e84-65d9cd197c78",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "lolkekcheburek@gmail.com"
+    }, {
+      "id": "c79c14c0-c9ae-4892-acca-036069a23815",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55d93772-d3a4-494a-9f30-46bd7d11359f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "319BNqu3&NnT"
+    }, {
+      "id": "40df1811-7ec2-4bf5-a2bf-450053f30bb3",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-button",
+      "targets": [
+        ["id=submit-button", "id"],
+        ["name=submit-button", "name"],
+        ["css=#submit-button", "css:finder"],
+        ["xpath=//button[@id='submit-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76fb50cb-678d-4535-9edf-1577704d152c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s-input-message:nth-child(3)",
+      "targets": [
+        ["css=.s-input-message:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='login-form']/div/p", "xpath:idRelative"],
+        ["xpath=//form/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'The email or password is incorrect.')]", "xpath:innerText"]
+      ],
+      "value": "The email or password is incorrect."
+    }]
+  }, {
+    "id": "5ff00a35-0e87-4aae-84f9-8d348532828a",
+    "name": "Register_without_any_credentials",
+    "commands": [{
+      "id": "ee8a3681-d0c0-4e6d-958c-6d9ecbe3c3e9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d5c3ce8-6809-442d-974d-dda40d9ebfcb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.ml4", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign up')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://stackoverflow.com/users/signup?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f')]", "xpath:href"],
+        ["xpath=//nav/ol/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "851800bc-5327-40d5-b6ac-381d0507ad6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-button",
+      "targets": [
+        ["id=submit-button", "id"],
+        ["name=submit-button", "name"],
+        ["css=#submit-button", "css:finder"],
+        ["xpath=//button[@id='submit-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f868716b-441b-46d4-a687-a4bd7f9b5018",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.d-flex:nth-child(5) > .s-input-message",
+      "targets": [
+        ["css=.d-flex:nth-child(5) > .s-input-message", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//form/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Email cannot be empty.')]", "xpath:innerText"]
+      ],
+      "value": "Email cannot be empty."
+    }, {
+      "id": "1338017b-43a8-464c-bfda-cc6b59d7b01b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.fd-column-reverse > .flex--item",
+      "targets": [
+        ["css=.fd-column-reverse > .flex--item", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[3]/p[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Password cannot be empty.')]", "xpath:innerText"]
+      ],
+      "value": "Password cannot be empty."
+    }, {
+      "id": "ef6501d7-59fc-49e9-8b61-6cf692e97c8e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.m0",
+      "targets": [
+        ["css=.m0", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[4]/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'CAPTCHA response required.')]", "xpath:innerText"]
+      ],
+      "value": "CAPTCHA response required."
+    }]
+  }, {
+    "id": "117900b6-01d3-42ea-adbc-e1a1c8f2d68d",
+    "name": "Register_with_displayname",
+    "commands": [{
+      "id": "4dd08d75-fcb3-4ef4-bb91-708ab356b824",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cb43308-0c4e-4dcf-817b-b05f744be545",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.ml4", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign up')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://stackoverflow.com/users/signup?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f')]", "xpath:href"],
+        ["xpath=//nav/ol/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b3e7a10-8d62-4258-bc1c-9db23b158456",
+      "comment": "",
+      "command": "click",
+      "target": "id=display-name",
+      "targets": [
+        ["id=display-name", "id"],
+        ["name=display-name", "name"],
+        ["css=#display-name", "css:finder"],
+        ["xpath=//input[@id='display-name']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "547bc9d1-5db1-446f-a6ed-5b8c5c849790",
+      "comment": "",
+      "command": "type",
+      "target": "id=display-name",
+      "targets": [
+        ["id=display-name", "id"],
+        ["name=display-name", "name"],
+        ["css=#display-name", "css:finder"],
+        ["xpath=//input[@id='display-name']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Dmitrii"
+    }, {
+      "id": "aea962f0-964a-4cdc-a28c-28545175bd91",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-button",
+      "targets": [
+        ["id=submit-button", "id"],
+        ["name=submit-button", "name"],
+        ["css=#submit-button", "css:finder"],
+        ["xpath=//button[@id='submit-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a97c77f3-0c23-4595-9cce-740d7e4a0d6c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.d-flex:nth-child(5) > .s-input-message",
+      "targets": [
+        ["css=.d-flex:nth-child(5) > .s-input-message", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//form/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Email cannot be empty.')]", "xpath:innerText"]
+      ],
+      "value": "Email cannot be empty."
+    }, {
+      "id": "31242fc2-ef4b-49bd-8731-5556930f9ba0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.fd-column-reverse > .flex--item",
+      "targets": [
+        ["css=.fd-column-reverse > .flex--item", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[3]/p[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Password cannot be empty.')]", "xpath:innerText"]
+      ],
+      "value": "Password cannot be empty."
+    }, {
+      "id": "1085678e-1244-42e2-857c-2444c586f6f0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.m0",
+      "targets": [
+        ["css=.m0", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[4]/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'CAPTCHA response required.')]", "xpath:innerText"]
+      ],
+      "value": "CAPTCHA response required."
+    }]
+  }, {
+    "id": "6a661df2-3ea3-49e8-aec1-ac3efc5506f2",
+    "name": "Register_with_email_and_password",
+    "commands": [{
+      "id": "209415db-6d73-48d7-9cd0-b35ffc69518d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba8b8301-cd23-4e71-9c2e-543458f0e416",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffd05242-fc9a-43f8-9ba0-0f9f89f1506b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.ml4", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign up')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://stackoverflow.com/users/signup?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f')]", "xpath:href"],
+        ["xpath=//nav/ol/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8ea2856-f42d-400c-8bef-de23b13430bd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.s-btn__github",
+      "targets": [
+        ["css=.s-btn__github", "css:finder"],
+        ["xpath=//div[@id='openid-buttons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb431fda-dd57-4475-9891-cd1d64560f45",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.s-btn__github",
+      "targets": [
+        ["css=.s-btn__github", "css:finder"],
+        ["xpath=//div[@id='openid-buttons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79db48ef-04e9-46a3-ae10-f2379d87264d",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc1c5914-8bcc-433f-beaf-afcfd29cbbac",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "lolkekcheburek@gmail.com"
+    }, {
+      "id": "5f35cd31-a1a3-4712-823a-e53b227cbcd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6000f8a-8e3b-448a-9759-f75f30e2a3b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "319BNqu3&NnT"
+    }, {
+      "id": "a8b6f102-c307-4d63-90f6-9369cffc17dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-button",
+      "targets": [
+        ["id=submit-button", "id"],
+        ["name=submit-button", "name"],
+        ["css=#submit-button", "css:finder"],
+        ["xpath=//button[@id='submit-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05385b84-9de2-49cc-9e54-8474075b533c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.m0",
+      "targets": [
+        ["css=.m0", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[4]/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'CAPTCHA response required.')]", "xpath:innerText"]
+      ],
+      "value": "CAPTCHA response required."
+    }]
+  }],
+  "suites": [{
+    "id": "8ec19cd3-3075-4368-8c47-25d0666e9ce0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c3f62216-98df-433b-bc44-12ffaa184050"]
+  }],
+  "urls": ["https://stackoverflow.com/"],
+  "plugins": []
+}
