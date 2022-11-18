@@ -1,0 +1,777 @@
+{
+  "id": "e765ec6f-7c71-46c0-aa9c-eacf91ce105c",
+  "version": "2.0",
+  "name": "BootsShopTest",
+  "url": "http://localhost:34704/jptv20_webBootsShop",
+  "tests": [{
+    "id": "91588a84-3d9e-41e1-a524-6b85d90ec989",
+    "name": "Login_without_login",
+    "commands": [{
+      "id": "a1221b7e-2fa1-4da5-8aee-e18df06598b9",
+      "comment": "",
+      "command": "open",
+      "target": "/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8967ffd-f100-489d-995c-f8bd7ea7553d",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c5d6fbc-d83b-4452-9c25-d6e429dcb0b4",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "67d5ae85-907a-46e8-bb77-fd621afd912b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9330863e-25b1-4a87-a587-c8862a1ef051",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Неверный логин или пароль ')]", "xpath:innerText"]
+      ],
+      "value": "Неверный логин или пароль "
+    }]
+  }, {
+    "id": "7dfd8cbe-995b-46ac-942f-85d261200e0a",
+    "name": "Login_without_password",
+    "commands": [{
+      "id": "941d5083-049b-45ce-a2c1-8d48c9a90dca",
+      "comment": "",
+      "command": "open",
+      "target": "/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e945ec2-fe30-4841-a7c9-2f787f640b47",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08280fa1-899e-403b-9841-4c6e3511ec2c",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "1573e7c5-608a-46c2-9a47-27a1ac060d5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7bb4414-c502-4513-8709-5bbe9f2092d0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Неверный логин или пароль ')]", "xpath:innerText"]
+      ],
+      "value": "Неверный логин или пароль "
+    }]
+  }, {
+    "id": "5b00692e-3cac-402a-a1af-dedb397ab805",
+    "name": "Login",
+    "commands": [{
+      "id": "cd2181e7-295b-4926-b16a-a79fa66747e7",
+      "comment": "",
+      "command": "open",
+      "target": "/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96322634-3a14-454b-8a52-c78fc15c866d",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e35e5aba-4b25-4a56-9c84-f2e1f74e593d",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "526f4245-4dfe-4eae-b8d0-18a0b7905eb3",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f245b32f-7525-4545-b2a3-294519dbd785",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "76f64454-3570-4c36-92b5-eae7163fe157",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd6c1332-3c77-4dc1-aa1a-ac27aa5e1b5a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Неверный логин или пароль ')]", "xpath:innerText"]
+      ],
+      "value": "Добро пожаловать, Dmitrii"
+    }]
+  }, {
+    "id": "a663bbcd-5e83-4f1d-a3e0-5db72a0e16e5",
+    "name": "Register_without_credentials",
+    "commands": [{
+      "id": "5bb4d3af-111b-4328-9ac1-1df461c40ce8",
+      "comment": "",
+      "command": "open",
+      "target": "/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "946fa967-8dac-472d-890a-f281a60f83dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Зарегистрироваться",
+      "targets": [
+        ["linkText=Зарегистрироваться", "linkText"],
+        ["css=.w-100 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Зарегистрироваться')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'showRegistration')]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b5294da-ba60-48ba-97f6-dee6cbeea2c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3bfe0d2-7ca0-4c7c-bae0-e687fa008665",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Заполните все поля ')]", "xpath:innerText"]
+      ],
+      "value": "Заполните все поля "
+    }]
+  }, {
+    "id": "305eecb3-4f47-4f57-a38d-1cb371716d2e",
+    "name": "Register",
+    "commands": [{
+      "id": "a5988e84-0980-4cb7-a656-190c6f70b3db",
+      "comment": "",
+      "command": "open",
+      "target": "/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a294e919-2d1b-4ced-b980-ecc5440ae0d9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Зарегистрироваться",
+      "targets": [
+        ["linkText=Зарегистрироваться", "linkText"],
+        ["css=.w-100 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Зарегистрироваться')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'showRegistration')]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f237c674-3c86-41e7-85fa-8373f957750b",
+      "comment": "",
+      "command": "click",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08017a52-eb01-4030-b91f-0314c5041d69",
+      "comment": "",
+      "command": "type",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "d5314f5c-f861-4dc8-9af2-4d7d80aa7a69",
+      "comment": "",
+      "command": "click",
+      "target": "name=sureName",
+      "targets": [
+        ["name=sureName", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='sureName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a519c557-79b4-48f5-9306-f5bde9af8ced",
+      "comment": "",
+      "command": "type",
+      "target": "name=sureName",
+      "targets": [
+        ["name=sureName", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='sureName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "13a14861-fdcf-4ddc-a456-88d3685605ae",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa66a24e-d7ec-4ae1-9e20-89b0290e3f7e",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.row:nth-child(1) > .form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "e41f3131-2049-4332-8dba-bd953bf6b180",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .mb-3", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "669329e9-3a93-44f0-8593-17604a04a1a7",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .mb-3", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "c5f7e743-b332-407b-9cd8-7685055d4720",
+      "comment": "",
+      "command": "click",
+      "target": "name=password1",
+      "targets": [
+        ["name=password1", "name"],
+        ["css=.form-group:nth-child(2) > .mb-3", "css:finder"],
+        ["xpath=//input[@name='password1']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dff6553b-2694-46ce-a1df-cd6f2f8073c5",
+      "comment": "",
+      "command": "type",
+      "target": "name=password1",
+      "targets": [
+        ["name=password1", "name"],
+        ["css=.form-group:nth-child(2) > .mb-3", "css:finder"],
+        ["xpath=//input[@name='password1']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "9e1a77a5-9988-4b11-a6fa-00b775697bfe",
+      "comment": "",
+      "command": "click",
+      "target": "name=password2",
+      "targets": [
+        ["name=password2", "name"],
+        ["css=.form-group:nth-child(3) > .mb-3", "css:finder"],
+        ["xpath=//input[@name='password2']", "xpath:attributes"],
+        ["xpath=//div[2]/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "254b4617-5cfa-4fae-89a4-4d39a1891685",
+      "comment": "",
+      "command": "type",
+      "target": "name=password2",
+      "targets": [
+        ["name=password2", "name"],
+        ["css=.form-group:nth-child(3) > .mb-3", "css:finder"],
+        ["xpath=//input[@name='password2']", "xpath:attributes"],
+        ["xpath=//div[2]/div[3]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "5fa1804b-c9ef-42ab-b1a9-110ffe108f4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35fe0111-3380-4b3b-acd3-4c0b73d20764",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Привет, a! Авторизуйтесь ')]", "xpath:innerText"]
+      ],
+      "value": "Привет, a! Авторизуйтесь "
+    }]
+  }, {
+    "id": "95bb2b7b-8576-4f21-90e1-8c1f40ef117e",
+    "name": "Change_role",
+    "commands": [{
+      "id": "4b41d10e-5819-4b7f-90ce-25402fa81f69",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:34704/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e004aacf-508f-47b7-9075-f9103e07dda7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "706eb925-44fa-46ce-9801-2fad988a0d23",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73ed4a16-be54-46ec-aba5-f0ea252082cf",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "6d58f47c-5d0c-4419-bae6-cce1af502f43",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "f6c7731f-092e-4801-b4c0-6500c083fd90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4eda932e-5d1b-42f2-8256-f5614dccc2c3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Назначить роль",
+      "targets": [
+        ["linkText=Назначить роль", "linkText"],
+        ["css=.me-auto > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Назначить роль')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'showChangeRole')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Назначить роль')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66e6c4cc-41be-4aa6-945d-e8463748e37e",
+      "comment": "",
+      "command": "click",
+      "target": "name=selectRole",
+      "targets": [
+        ["name=selectRole", "name"],
+        ["css=.form-group:nth-child(2) > .form-select", "css:finder"],
+        ["xpath=//select[@name='selectRole']", "xpath:attributes"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f164eb7-90b6-465b-bfdd-423de511083a",
+      "comment": "",
+      "command": "select",
+      "target": "name=selectRole",
+      "targets": [],
+      "value": "label=SELLER"
+    }, {
+      "id": "30811ce0-c31c-456e-b274-8f65866a159b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Success')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0f54249-8b22-479f-a951-289123c947c9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Роль назначена ')]", "xpath:innerText"]
+      ],
+      "value": "Роль назначена "
+    }]
+  }, {
+    "id": "d3a30c1d-d33f-4823-bddf-c2e5c364465c",
+    "name": "Add_product",
+    "commands": [{
+      "id": "43181ede-f252-4219-819e-66f7374c7173",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:34704/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b058ce5-03e3-491d-b5dd-b575cc455a83",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b87c9f23-4082-4b33-825a-63a50524d38e",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "80cfac20-567c-4bad-a142-54f9c7fe3a4f",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "56a34310-89f5-4a76-8b9a-f77ba77f71fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d015d07-a592-4298-b478-980eccae8aa9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Добавить товар",
+      "targets": [
+        ["linkText=Добавить товар", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Добавить товар')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'showAddProduct')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Добавить товар')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0efcef24-be6c-4c10-a44e-565867fcb894",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acf0bdf0-e9b4-43ec-9baf-2eb0420bf468",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "a0e84d2b-a44f-44be-88d4-004e69bcbe29",
+      "comment": "",
+      "command": "click",
+      "target": "name=description",
+      "targets": [
+        ["name=description", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0efea61b-8e1e-4be4-b7cc-e90e84b02a0d",
+      "comment": "",
+      "command": "type",
+      "target": "name=description",
+      "targets": [
+        ["name=description", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "28c03740-d699-43c1-870a-a0e86431c2de",
+      "comment": "",
+      "command": "type",
+      "target": "name=size",
+      "targets": [
+        ["name=size", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='size']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "31"
+    }, {
+      "id": "343f0204-68c8-4601-85d3-a09274b7bc96",
+      "comment": "",
+      "command": "type",
+      "target": "name=price",
+      "targets": [
+        ["name=price", "name"],
+        ["css=.input-group > .form-control", "css:finder"],
+        ["xpath=//input[@name='price']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "7eebd7ce-7259-404d-be0e-9dfc87f99ceb",
+      "comment": "",
+      "command": "click",
+      "target": "name=price",
+      "targets": [
+        ["name=price", "name"],
+        ["css=.input-group > .form-control", "css:finder"],
+        ["xpath=//input[@name='price']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52f6fba7-f495-43ff-9954-7a3e41386162",
+      "comment": "",
+      "command": "type",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "e2f971cc-190d-4d7c-9e49-86d9e47d1610",
+      "comment": "",
+      "command": "click",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2aaa873a-9931-4879-a85f-7df93f3d3d17",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Добавить товар']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6066a986-4eda-485c-97cf-9a79c34c5416",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.text-info",
+      "targets": [
+        ["css=.text-info", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Товар успешно добавлен ')]", "xpath:innerText"]
+      ],
+      "value": "Товар успешно добавлен "
+    }]
+  }],
+  "suites": [{
+    "id": "e3a48535-ba41-4b84-9ff9-cb1c73fb769d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:34704/", "http://localhost:34704/jptv20_webBootsShop/", "http://localhost:34704/jptv20_webBootsShop"],
+  "plugins": []
+}
