@@ -196,7 +196,7 @@
         ["xpath=//p", "xpath:position"],
         ["xpath=//p[contains(.,'Неверный логин или пароль ')]", "xpath:innerText"]
       ],
-      "value": "Добро пожаловать, Dmitrii"
+      "value": "Добро пожаловать, Lol"
     }]
   }, {
     "id": "a663bbcd-5e83-4f1d-a3e0-5db72a0e16e5",
@@ -446,13 +446,6 @@
       "comment": "",
       "command": "open",
       "target": "http://localhost:34704/jptv20_webBootsShop/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "e004aacf-508f-47b7-9075-f9103e07dda7",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "968x1040",
       "targets": [],
       "value": ""
     }, {
@@ -762,6 +755,830 @@
         ["xpath=//p[contains(.,'Товар успешно добавлен ')]", "xpath:innerText"]
       ],
       "value": "Товар успешно добавлен "
+    }]
+  }, {
+    "id": "03b11cdf-6c13-4225-a4f7-0a769012fd84",
+    "name": "Edit_user_data",
+    "commands": [{
+      "id": "a524b616-a9f5-4eab-84a3-9c8febf14ee7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:34704/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93f7aff6-1b32-44bd-96cb-e9dad88abda6",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfc5821c-bddf-43f5-acfb-26ef9fe996c2",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "5c211645-736b-4f01-badf-673837704133",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "7bb04693-bb3c-4c25-b6d8-2c012e5c6259",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58a866f0-ce63-4bff-8406-1d7ce86fcd3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Редактировать данные",
+      "targets": [
+        ["linkText=Редактировать данные", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Редактировать данные')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'showEditUser')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Редактировать данные')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7bd0228-6256-4f61-97f6-cc91858407e6",
+      "comment": "",
+      "command": "click",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=.card:nth-child(1) .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47e52a44-dd92-4c2d-bb9a-b45c1b05f47f",
+      "comment": "",
+      "command": "type",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=.card:nth-child(1) .form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lol"
+    }, {
+      "id": "14b754c6-4e42-4672-a0cf-5165aaa90699",
+      "comment": "",
+      "command": "click",
+      "target": "name=sureName",
+      "targets": [
+        ["name=sureName", "name"],
+        ["css=.card:nth-child(1) .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='sureName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87dc020d-107f-478e-89e5-63981b0cb3c3",
+      "comment": "",
+      "command": "type",
+      "target": "name=sureName",
+      "targets": [
+        ["name=sureName", "name"],
+        ["css=.card:nth-child(1) .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='sureName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Kek"
+    }, {
+      "id": "b2608996-2c06-4e87-b909-b8788b0fc768",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Подтвердить изменения']", "xpath:attributes"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eee0875c-af11-466d-b8e2-bb390c2aa54d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Данные успешно обновлены ')]", "xpath:innerText"]
+      ],
+      "value": "Данные успешно обновлены "
+    }]
+  }, {
+    "id": "c7a3bdbf-f0ba-44c7-b2ec-3d03d33b297f",
+    "name": "Add_money",
+    "commands": [{
+      "id": "d0194811-50cf-44ed-968c-ed51b9dd6ad2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:34704/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5650f650-9409-46ac-b564-ada5f07fbf8b",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c250434c-9f98-4ed7-b0d9-03ebd0d46801",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "750a0d28-557a-4799-844b-c300724aa88a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "cac30247-49ed-4f83-8dc9-0800528cbc6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd25d307-6e36-4b01-9977-e2432d121997",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Добавить денег",
+      "targets": [
+        ["linkText=Добавить денег", "linkText"],
+        ["css=.nav-item:nth-child(7) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Добавить денег')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'showAddMoney')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Добавить денег')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03f54114-b13c-46ef-8ead-096d4e90578a",
+      "comment": "",
+      "command": "click",
+      "target": "name=money",
+      "targets": [
+        ["name=money", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='money']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5f84f63-e4ef-483b-ab2e-83a1726ff5f2",
+      "comment": "",
+      "command": "type",
+      "target": "name=money",
+      "targets": [
+        ["name=money", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='money']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "91bbe947-7146-4ce3-b6d8-1eea4df3ffad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Внести деньги')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ef32867-8d35-4e59-a846-3c35742b1bb9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Счет успешно пополнен ')]", "xpath:innerText"]
+      ],
+      "value": "Счет успешно пополнен "
+    }]
+  }, {
+    "id": "a4128034-220f-43ed-9548-e55c168b9896",
+    "name": "Buy_product",
+    "commands": [{
+      "id": "46ccb12c-cbe0-409e-b8b1-270c4c809a5e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:34704/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d153ded4-78af-4cc2-8eb9-8c2ff3773902",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7932579d-f17d-4c2d-b2b2-0c5b304d87b6",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "6c86a5fc-ce96-43bb-90ec-b03f2f9d1109",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "ff4eeb74-0986-4881-b295-8118e5313109",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85bf9274-4bd4-4150-9a58-0ad369e39a63",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Список товаров",
+      "targets": [
+        ["linkText=Список товаров", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Список товаров')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'listProducts')])[2]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Список товаров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d29b1093-b339-4101-8b0f-3aa4fa4b8395",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) a:nth-child(5) strong",
+      "targets": [
+        ["css=.col:nth-child(1) a:nth-child(5) strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c41d3607-b74b-4f3d-a756-5a4fa65a5702",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='sumbit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e28df0d-397d-408d-81ff-66ebda37e63f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Товар успешно куплен ')]", "xpath:innerText"]
+      ],
+      "value": "Товар успешно куплен "
+    }]
+  }, {
+    "id": "01918bba-6c99-4583-9c88-3b2313ad87a0",
+    "name": "Edit_product",
+    "commands": [{
+      "id": "d8ff9783-e878-4dbb-825e-e0cc2f0da415",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:34704/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1df69846-682f-4903-adaa-97cc0c09006b",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d03cee4-894a-4fd4-8eb5-47302e2a852b",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "b45ac84b-bf25-4c99-b56a-322cd9f858c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "36c23372-4c09-43d2-b9e9-a3b13cd943bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a070983b-8454-45b3-a4fd-09a1e2133c7c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Список товаров",
+      "targets": [
+        ["linkText=Список товаров", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Список товаров')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'listProducts')])[2]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Список товаров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f42880cb-60c9-46d8-b7da-40c986f97bc1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) a:nth-child(6) strong",
+      "targets": [
+        ["css=.col:nth-child(1) a:nth-child(6) strong", "css:finder"],
+        ["xpath=//a[2]/p/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Редактировать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ea70046-fb91-4c0f-8944-9e2615ccc4cb",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06a84723-557c-4fb0-894b-43798a52b47d",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "aboba"
+    }, {
+      "id": "a1db073c-606e-4722-a2ab-8742e3c4cf9d",
+      "comment": "",
+      "command": "click",
+      "target": "name=description",
+      "targets": [
+        ["name=description", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "042d2d36-8028-44e2-b697-1facac7ba0f0",
+      "comment": "",
+      "command": "type",
+      "target": "name=description",
+      "targets": [
+        ["name=description", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "aboboa"
+    }, {
+      "id": "3773b8d6-1af7-451d-8fc0-de7a0df7a4be",
+      "comment": "",
+      "command": "type",
+      "target": "name=size",
+      "targets": [
+        ["name=size", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='size']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "32"
+    }, {
+      "id": "02888fba-a5d3-45ea-a404-cfdc53a8776c",
+      "comment": "",
+      "command": "click",
+      "target": "name=size",
+      "targets": [
+        ["name=size", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='size']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "768f132a-4724-4baf-a0df-7335a07453ef",
+      "comment": "",
+      "command": "type",
+      "target": "name=size",
+      "targets": [
+        ["name=size", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='size']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "33"
+    }, {
+      "id": "4d008ab6-73e7-4193-bdcf-18e715ddfca5",
+      "comment": "",
+      "command": "click",
+      "target": "name=size",
+      "targets": [
+        ["name=size", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='size']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6f93b6e-e3dd-4e47-8a2a-5db1e006625d",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=size",
+      "targets": [
+        ["name=size", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='size']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39ecd803-b957-4620-af7e-ce359f8316f2",
+      "comment": "",
+      "command": "type",
+      "target": "name=size",
+      "targets": [
+        ["name=size", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='size']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "34"
+    }, {
+      "id": "d572daa3-28e3-4e61-bc66-79078ee15b9b",
+      "comment": "",
+      "command": "click",
+      "target": "name=size",
+      "targets": [
+        ["name=size", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='size']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf41db42-9bb5-4864-88a5-bdcd57239dcf",
+      "comment": "",
+      "command": "type",
+      "target": "name=size",
+      "targets": [
+        ["name=size", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='size']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "35"
+    }, {
+      "id": "c568c402-fd30-40ea-b579-62905782f997",
+      "comment": "",
+      "command": "click",
+      "target": "name=size",
+      "targets": [
+        ["name=size", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='size']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42ae21d2-c5e1-422a-89e6-95291e9db438",
+      "comment": "",
+      "command": "type",
+      "target": "name=price",
+      "targets": [
+        ["name=price", "name"],
+        ["css=.input-group > .form-control", "css:finder"],
+        ["xpath=//input[@name='price']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "1.97"
+    }, {
+      "id": "82efc81a-7287-4af2-8646-1e557c999bc2",
+      "comment": "",
+      "command": "click",
+      "target": "name=price",
+      "targets": [
+        ["name=price", "name"],
+        ["css=.input-group > .form-control", "css:finder"],
+        ["xpath=//input[@name='price']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a27de604-7def-4966-8177-d26c750e69e4",
+      "comment": "",
+      "command": "type",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "3ac8aa2f-0045-48f3-8d99-e47afda88e5d",
+      "comment": "",
+      "command": "click",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c401288-2a24-46ee-b8e3-f97f1e6c0b56",
+      "comment": "",
+      "command": "type",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "abef1db4-9226-4c14-a7e9-f08a19141192",
+      "comment": "",
+      "command": "click",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b429c53-5d29-464f-9a09-ce387884c33d",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2718ce4-2a90-4e11-8310-c872c57c02f5",
+      "comment": "",
+      "command": "type",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "7"
+    }, {
+      "id": "2254a6c9-0beb-47c2-b8a2-d4ba4b21769c",
+      "comment": "",
+      "command": "click",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08e92018-7a01-40fa-8935-cc68a50798d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Изменить товар']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bf42049-fcad-4e01-9558-6955823691b7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Товар успешно обновлен ')]", "xpath:innerText"]
+      ],
+      "value": "Товар успешно обновлен "
+    }]
+  }, {
+    "id": "f4892f1c-3c5b-4280-9316-c2c753f85bfc",
+    "name": "Logout",
+    "commands": [{
+      "id": "58f49376-8e27-46a7-804d-25224d63db13",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:34704/jptv20_webBootsShop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02eaa7ad-5fe9-4050-92df-96a948f246d2",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13b96505-e567-4bb5-b63f-4e2383371f8a",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "2fe55138-99eb-4cb9-abdb-42a8da78e511",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "0a60d242-776f-4e63-86eb-ac307f542e7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fad6917-d837-4f96-aca5-2f371c4a10b3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Выйти",
+      "targets": [
+        ["linkText=Выйти", "linkText"],
+        ["css=.mb-2 .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Выйти')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'logout')]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Выйти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bf1c7cc-9326-43c9-87f9-4e7347da34e0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.my-3",
+      "targets": [
+        ["css=.my-3", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Вы вышли ')]", "xpath:innerText"]
+      ],
+      "value": "Вы вышли "
     }]
   }],
   "suites": [{
